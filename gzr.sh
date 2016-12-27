@@ -28,7 +28,7 @@ echo "                                                                          
 while true
 do 
   PS3='Pick a rom!:'
-  options=("Tesla Rom" "ValidusOs" "TipsyOs" "Quit")
+  options=("Tesla Rom" "ValidusOs" "TipsyOs" "Remove Rom" "Quit")
   select opt in "${options[@]}"
 do
   case $opt in    
@@ -76,6 +76,13 @@ do
         cd ~/
         clear
         break; 
+        ;;
+     "Remove Rom")
+        echo -n "Type folder name.> "
+        read text        
+        rm -rf ~/$text
+        clear
+        break;
         ;;  
      "Quit")
         exit
