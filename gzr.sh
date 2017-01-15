@@ -21,7 +21,7 @@ do
     echo "Pick a rom:"
     echo -e "\t(a) Tesla"
     echo -e "\t(b) Validus"
-    echo -e "\t(c) Tispy"
+    echo -e "\t(c) Tipsy"
     echo -e "\t(d) Exit"
     echo -n "Please enter your choice:"
     read choice
@@ -311,7 +311,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && time make tispy $flag                  
+        lunch tesla_${device}-userdebug && time make tipsy $flag                  
         clear
         ;;
         "b"|"b")
@@ -323,7 +323,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clobber && time make tispy $flag                  
+        lunch tesla_${device}-userdebug && make clobber && time make tipsy $flag                  
         clear
         ;;
         "c"|"c")
@@ -335,7 +335,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clean && time make tispy $flag                  
+        lunch tesla_${device}-userdebug && make clean && time make tipsy $flag                  
         clear
         ;;
         "d"|"d")
