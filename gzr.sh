@@ -200,7 +200,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && time make validus $flag                  
+        lunch validus_${device}-userdebug && time make validus $flag                  
         clear
         ;;
         "b"|"b")
@@ -212,7 +212,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clobber && time make validus $flag                  
+        lunch validus_${device}-userdebug && make clobber && time make validus $flag                  
         clear
         ;;
         "c"|"c")
@@ -224,7 +224,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clean && time make validus $flag                  
+        lunch validus_${device}-userdebug && make clean && time make validus $flag                  
         clear
         ;;
         "d"|"d")
@@ -311,7 +311,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && time make tipsy $flag                  
         clear
         ;;
         "b"|"b")
@@ -323,7 +323,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clobber && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && make clobber && time make tipsy $flag                  
         clear
         ;;
         "c"|"c")
@@ -335,7 +335,7 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clean && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && make clean && time make tipsy $flag                  
         clear
         ;;
         "d"|"d")
