@@ -72,11 +72,20 @@ do
         "c"|"c")
          while :
          do
+    clear
+    echo -e ${CL_BLU}"                                         ${CL_BLU}";
+    echo -e ${CL_BLU}"████████╗███████╗███████╗██╗      █████╗ ${CL_BLU}";
+    echo -e ${CL_BLU}"╚══██╔══╝██╔════╝██╔════╝██║     ██╔══██╗${CL_BLU}";
+    echo -e ${CL_BLU}"   ██║   █████╗  ███████╗██║     ███████║${CL_BLU}";
+    echo -e ${CL_BLU}"   ██║   ██╔══╝  ╚════██║██║     ██╔══██║${CL_BLU}";
+    echo -e ${CL_BLU}"   ██║   ███████╗███████║███████╗██║  ██║${CL_BLU}";
+    echo -e ${CL_BLU}"   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝${CL_RST}";
         echo "Build menu"
         echo -e "\t(a) Lunch & build"
         echo -e "\t(b) Lunch & build clobber"
         echo -e "\t(c) Lunch & build clean"
-        echo -e "\t(d) Return to Tesla menu"
+        echo -e "\t(d) Official"
+        echo -e "\t(e) Return to Tesla menu"
         echo -n "Please enter your choice:"
         read device
         case $device in
@@ -117,6 +126,14 @@ do
         clear
         ;;
         "d"|"d")
+        echo -n "Type folder name.> "
+        read text 
+        cd ~/$text/vendor/tesla/config/
+        sed -i -e 's/UNOFFICIAL/OFFICIAL/g' common.mk
+        cd ~/
+        clear
+        ;;
+        "e"|"e")
         clear
         break
         ;;
@@ -183,11 +200,20 @@ do
         "c"|"c")
          while :
          do
+         clear
+    echo -e ${CL_GRN}"                                                     ${CL_GRN}";
+    echo -e ${CL_GRN}"██╗   ██╗ █████╗ ██╗     ██╗██████╗ ██╗   ██╗███████╗${CL_GRN}";
+    echo -e ${CL_GRN}"██║   ██║██╔══██╗██║     ██║██╔══██╗██║   ██║██╔════╝${CL_GRN}";
+    echo -e ${CL_GRN}"██║   ██║███████║██║     ██║██║  ██║██║   ██║███████╗${CL_GRN}";
+    echo -e ${CL_GRN}"╚██╗ ██╔╝██╔══██║██║     ██║██║  ██║██║   ██║╚════██║${CL_GRN}";
+    echo -e ${CL_GRN}" ╚████╔╝ ██║  ██║███████╗██║██████╔╝╚██████╔╝███████║${CL_GRN}";
+    echo -e ${CL_GRN}" ╚═══╝  ╚═╝  ╚═╝╚══════╝╚═╝╚═════╝  ╚═════╝ ╚══════╝ ${CL_RST}";
         echo "Build menu"
         echo -e "\t(a) Lunch & build"
         echo -e "\t(b) Lunch & build clobber"
         echo -e "\t(c) Lunch & build clean"
-        echo -e "\t(d) Return to Validus menu"
+        echo -e "\t(d) Official"
+        echo -e "\t(e) Return to Validus menu"
         echo -n "Please enter your choice:"
         read device
         case $device in
@@ -228,6 +254,14 @@ do
         clear
         ;;
         "d"|"d")
+        echo -n "Type folder name.> "
+        read text 
+        cd ~/$text/vendor/validus/config/
+        sed -i -e 's/UNOFFICIAL/OFFICIAL/g' common.mk
+        cd ~/
+        clear
+        ;;
+        "e"|"e")
         clear
         break
         ;;
@@ -294,11 +328,20 @@ do
         "c"|"c")
          while :
          do
+    echo -e ${CL_YEL}"                                     ${CL_YEL}";
+    echo -e ${CL_YEL}"████████╗██╗██████╗ ███████╗██╗   ██╗${CL_YEL}";
+    echo -e ${CL_YEL}"╚══██╔══╝██║██╔══██╗██╔════╝╚██╗ ██╔╝${CL_YEL}";
+    echo -e ${CL_YEL}"   ██║   ██║██████╔╝███████╗ ╚████╔╝ ${CL_YEL}";
+    echo -e ${CL_YEL}"   ██║   ██║██╔═══╝ ╚════██║  ╚██╔╝  ${CL_YEL}";
+    echo -e ${CL_YEL}"   ██║   ██║██║     ███████║   ██║   ${CL_YEL}";
+    echo -e ${CL_YEL}"   ╚═╝   ╚═╝╚═╝     ╚══════╝   ╚═╝   ${CL_RST}";
+        clear
         echo "Build menu"
         echo -e "\t(a) Lunch & build"
         echo -e "\t(b) Lunch & build clobber"
         echo -e "\t(c) Lunch & build clean"
-        echo -e "\t(d) Return to Tipsy menu"
+        echo -e "\t(d) Official"
+        echo -e "\t(e) Return to Tipsy menu"
         echo -n "Please enter your choice:"
         read device
         case $device in
@@ -339,6 +382,14 @@ do
         clear
         ;;
         "d"|"d")
+        echo -n "Type folder name.> "
+        read text 
+        cd ~/$text/vendor/tipsy/config/
+        sed -i -e 's/UNOFFICIAL/OFFICIAL/g' common.mk
+        cd ~/
+        clear
+        ;;
+        "e"|"e")
         clear
         break
         ;;
