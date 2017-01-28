@@ -98,7 +98,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && time make tesla $flag                  
+        lunch tesla_${device}-userdebug && time make tesla $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Tesla*.zip  
+        cd ~/                                  
         clear
         ;;
         "b"|"b")
@@ -110,7 +112,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clobber && time make tesla $flag                  
+        lunch tesla_${device}-userdebug && make clobber && time make tesla $flag 
+        gdrive upload $ANDROID_PRODUCT_OUT/Tesla*.zip  
+        cd ~/                                 
         clear
         ;;
         "c"|"c")
@@ -122,7 +126,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tesla_${device}-userdebug && make clean && time make tesla $flag                  
+        lunch tesla_${device}-userdebug && make clean && time make tesla $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Tesla*.zip 
+        cd ~/                                  
         clear
         ;;
         "d"|"d")
@@ -226,7 +232,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch validus_${device}-userdebug && time make validus $flag                  
+        lunch validus_${device}-userdebug && time make validus $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Validus*.zip
+        cd ~/                
         clear
         ;;
         "b"|"b")
@@ -238,7 +246,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch validus_${device}-userdebug && make clobber && time make validus $flag                  
+        lunch validus_${device}-userdebug && make clobber && time make validus $flag 
+        gdrive upload $ANDROID_PRODUCT_OUT/Validus*.zip  
+        cd ~/                                 
         clear
         ;;
         "c"|"c")
@@ -250,7 +260,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch validus_${device}-userdebug && make clean && time make validus $flag                  
+        lunch validus_${device}-userdebug && make clean && time make validus $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Validus*.zip
+        cd ~/                                  
         clear
         ;;
         "d"|"d")
@@ -354,7 +366,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tipsy_${device}-userdebug && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && time make tipsy $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Tipsy*.zip  
+        cd ~/                                  
         clear
         ;;
         "b"|"b")
@@ -366,7 +380,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tipsy_${device}-userdebug && make clobber && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && make clobber && time make tipsy $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Tipsy*.zip  
+        cd ~/                                  
         clear
         ;;
         "c"|"c")
@@ -378,7 +394,9 @@ do
         echo -n "Type -jx flag.> "
         read flag
         . build/envsetup.sh
-        lunch tipsy_${device}-userdebug && make clean && time make tipsy $flag                  
+        lunch tipsy_${device}-userdebug && make clean && time make tipsy $flag
+        gdrive upload $ANDROID_PRODUCT_OUT/Tipsy*.zip 
+        cd ~/                                  
         clear
         ;;
         "d"|"d")
